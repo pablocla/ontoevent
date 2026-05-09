@@ -1,11 +1,31 @@
-<div align="center">
+# OntoEvent ERP
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+MVP de OntoEvent ERP - herramienta visual para modelar ontologías de negocio e inferir reglas.
 
-  <h1>Built with AI Studio</h2>
+## Tecnologías Principales
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- Next.js 15 (App Router)
+- React Flow v11 (Canvas de UI)
+- Zustand v4 (Manejo de estado)
+- Drizzle ORM + SQLite
+- NextAuth.js v5 (Autenticación)
+- Tailwind CSS
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Uso local
 
-</div>
+```bash
+# 1. Instalar dependencias
+npm install
+
+# 2. Empujar el schema local SQLite
+npx drizzle-kit push
+
+# 3. Correr entorno de desarrollo
+npm run dev
+```
+
+## Producción (Docker)
+
+```bash
+docker-compose up --build
+```
